@@ -1,0 +1,28 @@
+SRGAN : 
+
+keep BN / PReLU / vgg after active function / L2 loss / hinge-loss / depthToSpace
+
+
+SRGAN64 : (trained with 64*64 input) 
+
+keep BN / PReLU / vgg after active function / L2 loss / hinge-loss / depthToSpace
+
+
+SRGAN_P : 
+
+keep BN   /   PReLU   / vgg after active function / L2 loss / hinge-loss / PixelShuffle
+
+
+SRGAN_nBN : 
+
+remove BN / leakyReLU / vgg after active function / L2 loss / hinge-loss / depthToSpace
+
+
+SRGAN2 : 
+
+remove BN / leakyReLU / vgg before active function / L1 loss / hinge-loss / depthToSpace
+
+
+SRGAN3 : 
+
+remove BN / leakyReLU / vgg before active function / L1 loss / hinge-loss / PixelShuffle
